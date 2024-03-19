@@ -15,12 +15,24 @@ Nan != null, underfined, false, '', 0 , Nan
 
  */
 
-function ownIsNan (value){
-    let a = value;
-    return(console.log(`${value} is not a number`) + Number(a))
-}
-console.log(ownIsNan(undefined))
+console.log(isNaN(undefined))
+console.log(isNaN("42"));
+console.log(isNaN("foo"));
+console.log(isNaN(NaN));
 
+
+function myIsNaN (value){
+    let a = Number(value);
+    console.log(a)
+    if (a !== NaN ) {
+        return true
+    }
+    return false
+}
+console.log(myIsNaN(undefined))
+console.log(myIsNaN("42"));
+console.log(myIsNaN("foo"));
+console.log(myIsNaN(NaN));
 
 
 /*ДЗ 2
@@ -44,16 +56,15 @@ console.log(ownIsNan(undefined))
 - Вислати вашу гілку*/
 
 function pad(line, symbol, num, place){
-    if (line.length < num){
-        if ( place == true){
-            console.log(line + symbol)
-        } else {
-            console.log(symbol + line)
-        }
-    } else (console.log(line))
-}
-pad('texxt', '*', 6, false)
 
+        if ( place === true){
+            console.log(symbol.repeat(num) + line)
+        } else {
+            console.log(line + symbol.repeat(num))
+        }
+    }
+
+pad('texxt', '*', 10, false)
 
 /*ДЗ3
 

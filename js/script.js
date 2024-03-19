@@ -27,12 +27,12 @@ console.log(res);*/
 Метод isNaN (is Not-a-Number) в JavaScript використовується для перевірки, чи є передане значення нечисловим (NaN) типом.
 Цей метод повертає true, якщо значення є NaN, і false, якщо значення може бути конвертовано в число.
  */
-/*let a = 'qwerty' / 10;
+let a = 'qwerty' / 10;
 console.log(a);
 console.log(isNaN(a));
 console.log(isNaN(undefined)); // Цікаво. Все тому що цей тип не можна конвертувати в число
 console.log(isNaN(NaN));
-console.log(isNaN("qwerty"));*/
+console.log(isNaN("qwerty"));
 
 
 // Але, ми будемо використовувати це трохи інакше
@@ -213,11 +213,11 @@ console.log(str.includes("World"));*/
 console.log(str.includes("world", 7));*/
 
 // indexOf - дозволяє знайти індекс першого входження певного підрядка у вихідному рядку.
-//const str = "Hello, world!";
-/*console.log(str.indexOf("world"));
-console.log(str.indexOf("World"));*/ // А ось тут цікаво !
-/*console.log(str.indexOf("o", 5));
-console.log(str.indexOf("o", 9));*/
+const str = "Hello, world!";
+console.log(str.indexOf("world"));
+console.log(str.indexOf("World")); // А ось тут цікаво !
+console.log(str.indexOf("o", 5));
+console.log(str.indexOf("o", 9));
 
 //lastIndexOf
 /*const str = "Hello, world!";
@@ -234,9 +234,9 @@ console.log('example'.padEnd(8,'*'));
 
 // trim, trimStart, trimEnd - це методи для рядків які використовуються
 // для видалення пробілів.
-/*console.log('   hello'.trimStart());
+console.log('   hello'.trimStart());
 console.log('hello   '.trimEnd());
-console.log('  hello  '.trim());*/
+console.log('  hello  '.trim());
 
 // toLowerCase/toUpperCase - це методи для рядків які використовуються для зміни регістру символів у рядку.
 //var str = "Ось така дивна строчка";
@@ -250,17 +250,17 @@ console.log("  А ще можна Ось так  ".toUpperCase().trim().concat("
 // replace -  використовується для заміни певного підрядка або паттерну
 // у вихідному рядку іншим рядком або значенням
 //У рядку не можна нічого змінити
-/*var str = "рядок";
-console.log("str[4]=" + str[4]);
-str[5] = "F";   //Помилка
-console.log(str);*/
+//var str = "рядок";
+//console.log("str[4]=" + str[4]);
+//str[5] = "F";   //Помилка
+//console.log(str);
 //Ну а якщо ДУЖЕ хочеться? (практика)
 //var str = "Якийсь рядок просто для прикладу";
-/*var res = str.replace(' ', '_');
+var res = str.replace(' ', '_');
 console.log(res);
-console.log(str);*/
+console.log(str);
 /*var replaceAll = str.replaceAll('','*');
-console.log(replaceAll);*/
+console.log(replaceAll);
 
 //substring/substr/slice - ці методи дозволяють вам вирізати частину рядка,
 // починаючи з певного індексу і закінчуючи іншим індексом.
